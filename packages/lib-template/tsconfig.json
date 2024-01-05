@@ -1,0 +1,7 @@
+{
+  "extends": "../../tsconfig.lib-base.json",
+  "include": ["src/**/*"],
+  "compilerOptions": {
+    "types": ["jsdom"]
+  }
+}

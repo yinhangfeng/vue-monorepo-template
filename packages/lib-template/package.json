@@ -1,0 +1,26 @@
+{
+  "name": "lib-template",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "./src/index.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "vite build",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "peerDependencies": {},
+  "publishConfig": {
+    "exports": {
+      ".": {
+        "types": "./dist/index.d.ts",
+        "import": "./dist/index.js"
+      }
+    },
+    "main": "./dist/index.js"
+  }
+}

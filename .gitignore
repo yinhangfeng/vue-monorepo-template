@@ -1,0 +1,32 @@
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+node_modules
+.DS_Store
+dist
+coverage
+/output
+/output_resource
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+.eslintcache
+vite.config.ts.timestamp*
+config.ts.timestamp*
+
+playground/types/components.d.ts
+
+package-lock.json
+yarn.lock
+

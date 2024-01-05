@@ -1,0 +1,31 @@
+{
+  "name": "vue-template",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "./src/index.ts",
+  "files": [
+    "dist",
+    "src",
+    "style.less",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "vite build",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "peerDependencies": {
+    "vue": "^3.3.0"
+  },
+  "publishConfig": {
+    "exports": {
+      ".": {
+        "types": "./dist/index.d.ts",
+        "import": "./dist/index.js"
+      },
+      "./style.less": "./style.less"
+    },
+    "main": "./dist/index.js"
+  }
+}

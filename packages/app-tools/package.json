@@ -1,0 +1,33 @@
+{
+  "name": "app-tools",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "vite build",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@pnpm/types": "^9.4.0",
+    "vite-plugin-dts": "^3.6.4"
+  },
+  "peerDependencies": {
+    "vite": ">=4.3.0"
+  },
+  "publishConfig": {
+    "exports": {
+      ".": {
+        "types": "./dist/index.d.ts",
+        "import": "./dist/index.js",
+        "require": "./dist/index.cjs"
+      },
+      "./dist/*": "./dist/*"
+    },
+    "main": "./dist/index.js"
+  }
+}
